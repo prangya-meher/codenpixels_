@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE500"/>
+      <stop offset="100%" style="stop-color:#FF0A95"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  <!-- Dashboard UI -->
+  <rect x="80" y="60" width="640" height="330" rx="16" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Sidebar -->
+  <rect x="80" y="60" width="140" height="330" rx="16" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="150" cy="110" r="24" fill="rgba(255,45,120,0.6)"/>
+  <rect x="100" y="150" width="100" height="10" rx="5" fill="rgba(255,255,255,0.5)"/>
+  <rect x="100" y="175" width="80" height="8" rx="4" fill="rgba(255,255,255,0.3)"/>
+  <rect x="100" y="200" width="90" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <rect x="100" y="225" width="85" height="8" rx="4" fill="rgba(245,255,0,0.6)"/>
+  <rect x="100" y="250" width="75" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <!-- Main content -->
+  <rect x="240" y="80" width="460" height="40" rx="8" fill="rgba(255,255,255,0.1)"/>
+  <rect x="250" y="94" width="200" height="12" rx="4" fill="rgba(255,255,255,0.5)"/>
+  <!-- Order cards -->
+  <rect x="240" y="135" width="140" height="100" rx="10" fill="rgba(255,45,120,0.3)" stroke="rgba(255,45,120,0.5)" stroke-width="1"/>
+  <rect x="252" y="147" width="80" height="8" rx="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="252" y="163" width="60" height="20" rx="4" fill="rgba(245,255,0,0.8)"/>
+  <rect x="252" y="195" width="100" height="8" rx="3" fill="rgba(255,255,255,0.4)"/>
+  <rect x="395" y="135" width="140" height="100" rx="10" fill="rgba(245,255,0,0.2)" stroke="rgba(245,255,0,0.4)" stroke-width="1"/>
+  <rect x="407" y="147" width="80" height="8" rx="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="407" y="163" width="60" height="20" rx="4" fill="rgba(255,45,120,0.8)"/>
+  <rect x="407" y="195" width="100" height="8" rx="3" fill="rgba(255,255,255,0.4)"/>
+  <rect x="550" y="135" width="140" height="100" rx="10" fill="rgba(123,0,255,0.3)" stroke="rgba(123,0,255,0.5)" stroke-width="1"/>
+  <rect x="562" y="147" width="80" height="8" rx="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="562" y="163" width="60" height="20" rx="4" fill="rgba(204,255,0,0.8)"/>
+  <rect x="562" y="195" width="100" height="8" rx="3" fill="rgba(255,255,255,0.4)"/>
+  <text x="400" y="430" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="3">RESTAURANT DASHBOARD</text>
+</svg>

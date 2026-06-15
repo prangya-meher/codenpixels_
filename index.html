@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeNPixel — Digital Experiences</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">Code<span style="opacity:0.7">N</span>Pixel</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="main-nav">
+    <a href="#home" class="nav-logo">Code<span>N</span>Pixel <span class="logo-dot"></span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+      <a href="#contact" class="nav-cta">Get a Quote ↗</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+     HOME SECTION
+════════════════════════════════════════ -->
+  <section id="home">
+    <div class="home-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="container">
+      <div class="home-inner">
+        <div class="home-text">
+          <div class="section-tag gsap-fade">Digital Studio</div>
+          <h1 class="gsap-fade">
+            We Build<br><span class="highlight">Experiences</span><br>Not Just Sites
+          </h1>
+          <p class="gsap-fade">CodeNPixel crafts pixel-perfect, interactive digital products that captivate users and
+            elevate brands — from QR menus to e-commerce ecosystems.</p>
+          <div class="home-btns gsap-fade">
+            <a href="#contact" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              Contact Us
+            </a>
+            <a href="#projects" class="btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Show Our Work
+            </a>
+          </div>
+          <div class="home-stats gsap-fade">
+            <div class="stat-item">
+              <div class="stat-num">10<span>+</span></div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">10<span>+</span></div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">1<span>yr</span></div>
+              <div class="stat-label">Of Excellence</div>
+            </div>
+          </div>
+        </div>
+        <div class="home-visual gsap-fade">
+          <canvas id="hero-canvas"></canvas>
+          <div class="hero-badge badge-1">
+            <div class="badge-icon coral">🎨</div>
+            <div>
+              <strong style="display:block;font-family:'Syne',sans-serif;font-size:0.9rem;">Interactive UI</strong>
+              <span style="font-size:0.72rem;color:var(--text-muted)">Crafted with care</span>
+            </div>
+          </div>
+          <div class="hero-badge badge-2">
+            <div class="badge-icon mint">⚡</div>
+            <div>
+              <strong style="display:block;font-family:'Syne',sans-serif;font-size:0.9rem;">Fast Delivery</strong>
+              <span style="font-size:0.72rem;color:var(--text-muted)">On time, every time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <div class="scroll-text">scroll</div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════ -->
+  <section id="about">
+    <div class="about-bg">
+      <div class="geo-shape geo-1"></div>
+      <div class="geo-shape geo-2"></div>
+      <div class="geo-shape geo-3"></div>
+    </div>
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-visual-grid section-reveal">
+          <div class="about-img-card" style="background:linear-gradient(135deg,#FF2D78,#FFE500);">
+            <img src="assets/images/team-male.svg" alt="Arjun Sharma"
+              style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+            <div class="about-person-label">
+              <strong>Arjun Sharma</strong>Lead Developer & Co-founder
+            </div>
+          </div>
+          <div class="about-img-card" style="background:linear-gradient(135deg,#F5FF00,#7B00FF);">
+            <img src="assets/images/team-female.svg" alt="Priya Kapoor"
+              style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+            <div class="about-person-label">
+              <strong>Priya Kapoor</strong>UI/UX Designer
+            </div>
+          </div>
+          <div class="about-img-card" style="background:linear-gradient(135deg,#FF3EA5,#FF0A95);">
+            <div class="about-img-inner">👨‍🚀</div>
+            <div class="about-person-label">
+              <strong>Rohan Mehta</strong>Full Stack Dev
+            </div>
+          </div>
+
+        </div>
+        <div class="about-content">
+          <div class="section-tag section-reveal">Our Story</div>
+          <h2 class="section-reveal">Turning Ideas Into <em style="color:var(--coral);font-style:normal;">Digital
+              Reality</em></h2>
+          <p class="section-reveal">CodeNPixel was born from a simple belief — every business deserves a digital
+            presence as unique as their vision. We're a passionate team of developers and designers based in India,
+            crafting bespoke web experiences that don't just look great, they <em>perform</em>.</p>
+          <p class="section-reveal">From interactive restaurant QR menus to powerful e-commerce platforms, we bring
+            together cutting-edge technology and thoughtful design to solve real problems for real people.</p>
+          <div class="about-features section-reveal">
+            <div class="feature-chip">🎯 Interactive UI/UX</div>
+            <div class="feature-chip">📱 QR Menu Systems</div>
+            <div class="feature-chip">🎓 Student Projects</div>
+            <div class="feature-chip">🛍️ E-commerce Stores</div>
+            <div class="feature-chip">💻 Web Applications</div>
+            <div class="feature-chip">🔧 Custom Solutions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+     PROJECTS SECTION
+════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="projects-bg">
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+    </div>
+    <div class="container">
+      <div class="projects-header section-reveal">
+        <div class="section-tag" style="justify-content:center">Our Work</div>
+        <h2>Selected <em style="color:var(--coral);font-style:normal;">Projects</em></h2>
+        <p>Each project is a story of collaboration, creativity, and code. Here's what we've been building.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card section-reveal" data-title="QR Menu Pro"
+          data-desc="A fully interactive digital menu platform for restaurants and cafes. Customers scan a QR code to browse an animated, category-filtered menu with real-time availability, cart, and order placement. Built with Next.js, Tailwind, and Firebase for real-time sync."
+          data-tech="Next.js,Firebase,Tailwind,Framer Motion" data-img1="🍽️"
+          data-img1-bg="linear-gradient(135deg,#FF2D78,#FFE500)" data-img2="📱"
+          data-img2-bg="linear-gradient(135deg,#FFE500,#FF0A95)" data-git="https://github.com/codenpixel"
+          data-live="https://codenpixel.vercel.app">
+          <div class="project-images">
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#FF2D78,#FFE500);background-image:url(assets/images/project-qrmenu-1.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#FFE500,#FF0A95);background-image:url(assets/images/project-qrmenu-2.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-tag-badge">Food Tech</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech"><span class="tech-tag">Next.js</span><span class="tech-tag">Firebase</span><span
+                class="tech-tag">Tailwind</span></div>
+            <h3>QR Menu Pro</h3>
+            <p>Interactive digital menu system for restaurants with real-time updates and order tracking.</p>
+            <div class="project-actions">
+              <a href="https://github.com/codenpixel" target="_blank" class="proj-btn proj-btn-git">⌥ GitHub</a>
+              <a href="https://codenpixel.vercel.app" target="_blank" class="proj-btn proj-btn-live">↗ Live</a>
+              <button class="proj-btn proj-btn-expand" onclick="openModal(this.closest('.project-card'))">⊕
+                Expand</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card section-reveal" data-title="ShopNest E-Commerce"
+          data-desc="A complete e-commerce solution featuring product management, dynamic cart, Razorpay payment integration, seller dashboard, and automated invoice generation. The frontend is built with React and the backend with Node/Express + MongoDB."
+          data-tech="React,Node.js,MongoDB,Razorpay" data-img1="🛍️"
+          data-img1-bg="linear-gradient(135deg,#F5FF00,#7B00FF)" data-img2="💳"
+          data-img2-bg="linear-gradient(135deg,#7B00FF,#FF3EA5)" data-git="https://github.com/codenpixel"
+          data-live="https://codenpixel.vercel.app">
+          <div class="project-images">
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#F5FF00,#7B00FF);background-image:url(assets/images/project-ecommerce-1.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-img proj-img-bg" style="background:linear-gradient(135deg,#7B00FF,#FF3EA5);"></div>
+            <div class="project-tag-badge">E-Commerce</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span
+                class="tech-tag">MongoDB</span></div>
+            <h3>ShopNest E-Commerce</h3>
+            <p>Full-stack e-commerce platform with seller dashboard, payments, and auto invoicing.</p>
+            <div class="project-actions">
+              <a href="https://github.com/codenpixel" target="_blank" class="proj-btn proj-btn-git">⌥ GitHub</a>
+              <a href="https://codenpixel.vercel.app" target="_blank" class="proj-btn proj-btn-live">↗ Live</a>
+              <button class="proj-btn proj-btn-expand" onclick="openModal(this.closest('.project-card'))">⊕
+                Expand</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card section-reveal" data-title="EduTrack — Student Portal"
+          data-desc="A comprehensive student management portal for colleges with attendance tracking, grade management, assignment submission, and real-time notifications. Includes admin, teacher, and student dashboards with role-based access control."
+          data-tech="Vue.js,Laravel,MySQL,Chart.js" data-img1="🎓"
+          data-img1-bg="linear-gradient(135deg,#FF3EA5,#FFE500)" data-img2="📊"
+          data-img2-bg="linear-gradient(135deg,#FFE500,#F5FF00)" data-git="https://github.com/codenpixel"
+          data-live="https://codenpixel.vercel.app">
+          <div class="project-images">
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#FF3EA5,#FFE500);background-image:url(assets/images/project-edutrack-1.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-img proj-img-bg" style="background:linear-gradient(135deg,#FFE500,#F5FF00);"></div>
+            <div class="project-tag-badge">EdTech</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech"><span class="tech-tag">Vue.js</span><span class="tech-tag">Laravel</span><span
+                class="tech-tag">MySQL</span></div>
+            <h3>EduTrack — Student Portal</h3>
+            <p>Multi-role academic management system with real-time grade and attendance tracking.</p>
+            <div class="project-actions">
+              <a href="https://github.com/codenpixel" target="_blank" class="proj-btn proj-btn-git">⌥ GitHub</a>
+              <a href="https://codenpixel.vercel.app" target="_blank" class="proj-btn proj-btn-live">↗ Live</a>
+              <button class="proj-btn proj-btn-expand" onclick="openModal(this.closest('.project-card'))">⊕
+                Expand</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card section-reveal" data-title="HotelVista Booking"
+          data-desc="A luxury hotel booking and management platform with room availability calendar, booking engine, dynamic pricing, and automated confirmation emails. Staff management panel included. Integrated with Stripe for secure payment processing."
+          data-tech="React,Express,PostgreSQL,Stripe" data-img1="🏨"
+          data-img1-bg="linear-gradient(135deg,#7B00FF,#F5FF00)" data-img2="🗓️"
+          data-img2-bg="linear-gradient(135deg,#F5FF00,#FF2D78)" data-git="https://github.com/codenpixel"
+          data-live="https://codenpixel.vercel.app">
+          <div class="project-images">
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#7B00FF,#F5FF00);background-image:url(assets/images/project-hotel-1.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-img proj-img-bg" style="background:linear-gradient(135deg,#F5FF00,#FF2D78);"></div>
+            <div class="project-tag-badge">Hospitality</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">Express</span><span
+                class="tech-tag">Stripe</span></div>
+            <h3>HotelVista Booking</h3>
+            <p>Complete hotel booking engine with calendar, dynamic pricing, and staff management.</p>
+            <div class="project-actions">
+              <a href="https://github.com/codenpixel" target="_blank" class="proj-btn proj-btn-git">⌥ GitHub</a>
+              <a href="https://codenpixel.vercel.app" target="_blank" class="proj-btn proj-btn-live">↗ Live</a>
+              <button class="proj-btn proj-btn-expand" onclick="openModal(this.closest('.project-card'))">⊕
+                Expand</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card section-reveal" data-title="PortfolioGen"
+          data-desc="An AI-powered portfolio generator for students and freelancers. Users fill in their details through a step-by-step wizard and get a fully deployed personal portfolio site in under 5 minutes. Supports custom themes and domain connection."
+          data-tech="Next.js,OpenAI,Vercel,TypeScript" data-img1="✨"
+          data-img1-bg="linear-gradient(135deg,#FF0A95,#FF3EA5)" data-img2="🤖"
+          data-img2-bg="linear-gradient(135deg,#FF3EA5,#7B00FF)" data-git="https://github.com/codenpixel"
+          data-live="https://codenpixel.vercel.app">
+          <div class="project-images">
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#FF0A95,#FF3EA5);background-image:url(assets/images/project-portfolio-1.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-img proj-img-bg" style="background:linear-gradient(135deg,#FF3EA5,#7B00FF);"></div>
+            <div class="project-tag-badge">AI Tool</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech"><span class="tech-tag">Next.js</span><span class="tech-tag">OpenAI</span><span
+                class="tech-tag">TypeScript</span></div>
+            <h3>PortfolioGen</h3>
+            <p>AI-powered portfolio builder deploying personalized sites in under 5 minutes.</p>
+            <div class="project-actions">
+              <a href="https://github.com/codenpixel" target="_blank" class="proj-btn proj-btn-git">⌥ GitHub</a>
+              <a href="https://codenpixel.vercel.app" target="_blank" class="proj-btn proj-btn-live">↗ Live</a>
+              <button class="proj-btn proj-btn-expand" onclick="openModal(this.closest('.project-card'))">⊕
+                Expand</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card section-reveal" data-title="TaskFlow CRM"
+          data-desc="A lightweight CRM and task management system designed for small agencies. Features kanban boards, client communication logs, invoice generation, and project timeline tracking. Dark/light mode, responsive, and PWA-ready."
+          data-tech="React,Supabase,Tailwind,PWA" data-img1="📋" data-img1-bg="linear-gradient(135deg,#CCFF00,#F5FF00)"
+          data-img2="📈" data-img2-bg="linear-gradient(135deg,#F5FF00,#FFE500)" data-git="https://github.com/codenpixel"
+          data-live="https://codenpixel.vercel.app">
+          <div class="project-images">
+            <div class="project-img proj-img-bg"
+              style="background:linear-gradient(135deg,#CCFF00,#F5FF00);background-image:url(assets/images/project-taskflow-1.svg);background-size:cover;background-position:center;">
+            </div>
+            <div class="project-img proj-img-bg" style="background:linear-gradient(135deg,#F5FF00,#FFE500);"></div>
+            <div class="project-tag-badge">SaaS</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">Supabase</span><span
+                class="tech-tag">PWA</span></div>
+            <h3>TaskFlow CRM</h3>
+            <p>Agency CRM with kanban, client logs, invoicing, and project timeline management.</p>
+            <div class="project-actions">
+              <a href="https://github.com/codenpixel" target="_blank" class="proj-btn proj-btn-git">⌥ GitHub</a>
+              <a href="https://codenpixel.vercel.app" target="_blank" class="proj-btn proj-btn-live">↗ Live</a>
+              <button class="proj-btn proj-btn-expand" onclick="openModal(this.closest('.project-card'))">⊕
+                Expand</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="project-modal-overlay" id="project-modal-overlay" onclick="closeModalOutside(event)">
+    <div class="project-modal" id="project-modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-images" id="modal-images"></div>
+      <div class="modal-body">
+        <div class="project-tech" id="modal-tech" style="margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+        </div>
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc" style="margin-top:0.8rem;"></p>
+        <div style="display:flex;gap:0.8rem;margin-top:1.5rem;">
+          <a id="modal-git" href="#" target="_blank" class="btn-outline"
+            style="padding:0.7rem 1.4rem;font-size:0.9rem;">⌥ GitHub</a>
+          <a id="modal-live" href="#" target="_blank" class="btn-primary"
+            style="padding:0.7rem 1.4rem;font-size:0.9rem;">↗ Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+     SERVICES SECTION
+════════════════════════════════════════ -->
+  <section id="services">
+    <div class="services-bg">
+      <div class="srv-orb srv-orb-1"></div>
+      <div class="srv-orb srv-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="services-header section-reveal">
+        <div class="section-tag" style="justify-content:center">What We Do</div>
+        <h2>Services Built For <em style="color:var(--coral);font-style:normal;">Impact</em></h2>
+        <p style="color:var(--text-secondary);font-size:1.05rem;max-width:500px;margin:0.8rem auto 0;line-height:1.7;">
+          Hover on any service to see what's inside. We don't do average.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card section-reveal"
+          style="--srv-color:#FF2D78;--srv-bg:linear-gradient(135deg,#FF2D78,#FF0A95);">
+          <div class="srv-base">
+            <div class="srv-icon-wrap" style="background:rgba(255,45,120,0.12);">🎨</div>
+            <div class="srv-title">Interactive UI/UX Design</div>
+            <div class="srv-preview">We craft immersive, animated interfaces that users can't stop touching — buttons
+              that feel alive, transitions that tell stories.</div>
+          </div>
+          <div class="srv-bg-el">🎨</div>
+          <div class="srv-desc">
+            <h4>Interactive UI/UX Design</h4>
+            <p>We design and develop experiences users remember. Every interaction is intentional, every animation
+              purposeful.</p>
+            <ul>
+              <li>Custom animation & micro-interactions</li>
+              <li>Responsive across all devices</li>
+              <li>GSAP, Framer Motion, Three.js</li>
+              <li>User research & prototyping</li>
+              <li>A/B tested design patterns</li>
+            </ul>
+            <div class="srv-arrow">Explore →</div>
+          </div>
+        </div>
+
+        <div class="service-card section-reveal"
+          style="--srv-color:#F5FF00;--srv-bg:linear-gradient(135deg,#F5FF00,#7B00FF);">
+          <div class="srv-base">
+            <div class="srv-icon-wrap" style="background:rgba(245,255,0,0.12);">📱</div>
+            <div class="srv-title">QR Menu Systems</div>
+            <div class="srv-preview">Transform your restaurant or cafe's menu into a scannable, real-time digital
+              experience. No app download needed.</div>
+          </div>
+          <div class="srv-bg-el">📱</div>
+          <div class="srv-desc">
+            <h4>QR Menu Systems</h4>
+            <p>A contactless, animated dining menu platform that updates in real-time and captures orders instantly.</p>
+            <ul>
+              <li>Real-time menu updates</li>
+              <li>Category filtering & search</li>
+              <li>Multi-language support</li>
+              <li>Order & payment integration</li>
+              <li>Analytics dashboard</li>
+            </ul>
+            <div class="srv-arrow">See menu demo →</div>
+          </div>
+        </div>
+
+        <div class="service-card section-reveal"
+          style="--srv-color:#FFE500;--srv-bg:linear-gradient(135deg,#FFB800,#FF2D78);">
+          <div class="srv-base">
+            <div class="srv-icon-wrap" style="background:rgba(255,229,0,0.15);">🎓</div>
+            <div class="srv-title">Student Projects</div>
+            <div class="srv-preview">Final year project? We help CS, IT, and BCA students build complete, documented,
+              demo-ready projects that impress examiners.</div>
+          </div>
+          <div class="srv-bg-el">🎓</div>
+          <div class="srv-desc">
+            <h4>Student Project Support</h4>
+            <p>Complete academic project development with documentation, presentation, and live demo included.</p>
+            <ul>
+              <li>Requirement analysis & design</li>
+              <li>Full source code + database</li>
+              <li>Complete project report</li>
+              <li>Presentation support</li>
+              <li>Quick turnaround guaranteed</li>
+            </ul>
+            <div class="srv-arrow">Get help →</div>
+          </div>
+        </div>
+
+        <div class="service-card section-reveal"
+          style="--srv-color:#FF3EA5;--srv-bg:linear-gradient(135deg,#FF3EA5,#7B00FF);">
+          <div class="srv-base">
+            <div class="srv-icon-wrap" style="background:rgba(255,62,165,0.12);">🛍️</div>
+            <div class="srv-title">E-Commerce Websites</div>
+            <div class="srv-preview">End-to-end online stores — from product catalog to checkout to seller dashboard.
+              Built to convert and scale.</div>
+          </div>
+          <div class="srv-bg-el">🛍️</div>
+          <div class="srv-desc">
+            <h4>E-Commerce Solutions</h4>
+            <p>Complete online store development with everything you need to start selling immediately.</p>
+            <ul>
+              <li>Product management system</li>
+              <li>Secure payment gateway</li>
+              <li>Inventory & order tracking</li>
+              <li>Mobile-first design</li>
+              <li>SEO optimized out of the box</li>
+            </ul>
+            <div class="srv-arrow">Build my store →</div>
+          </div>
+        </div>
+
+        <div class="service-card section-reveal"
+          style="--srv-color:#CCFF00;--srv-bg:linear-gradient(135deg,#F5FF00,#CCFF00);--srv-text:#0D0010;">
+          <div class="srv-base">
+            <div class="srv-icon-wrap" style="background:rgba(204,255,0,0.15);">🌐</div>
+            <div class="srv-title">Web Applications</div>
+            <div class="srv-preview">Custom SaaS tools, booking systems, dashboards, portals — if you can imagine it, we
+              can build it, beautifully.</div>
+          </div>
+          <div class="srv-bg-el">🌐</div>
+          <div class="srv-desc">
+            <h4>Custom Web Applications</h4>
+            <p>Full-stack web apps tailored to your business logic, workflows, and user needs.</p>
+            <ul>
+              <li>Role-based authentication</li>
+              <li>Real-time data & notifications</li>
+              <li>API design & integrations</li>
+              <li>Cloud deployment (AWS/Vercel)</li>
+              <li>Ongoing maintenance & support</li>
+            </ul>
+            <div class="srv-arrow">Start project →</div>
+          </div>
+        </div>
+
+        <div class="service-card section-reveal"
+          style="--srv-color:#7B00FF;--srv-bg:linear-gradient(135deg,#7B00FF,#FF3EA5);">
+          <div class="srv-base">
+            <div class="srv-icon-wrap" style="background:rgba(123,0,255,0.12);">⚡</div>
+            <div class="srv-title">Performance & SEO</div>
+            <div class="srv-preview">Speed and discoverability aren't features — they're fundamentals. We audit,
+              optimize, and future-proof your web presence.</div>
+          </div>
+          <div class="srv-bg-el">⚡</div>
+          <div class="srv-desc">
+            <h4>Performance & SEO Optimization</h4>
+            <p>From 60 to 99 on Lighthouse. From page 3 to page 1 on Google. We make it happen.</p>
+            <ul>
+              <li>Core Web Vitals optimization</li>
+              <li>Technical SEO audit & fixes</li>
+              <li>Image & asset optimization</li>
+              <li>Structured data & schema</li>
+              <li>Monthly performance reports</li>
+            </ul>
+            <div class="srv-arrow">Audit my site →</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-bg">
+      <div class="contact-mesh"></div>
+    </div>
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <div class="section-tag section-reveal">Get In Touch</div>
+          <h2 class="section-reveal">Got a Project <em>in Mind?</em></h2>
+          <p class="section-reveal">We'd love to hear about your next big idea. Whether it's a quick quote or a full
+            product brief — drop us a message and we'll get back within 24 hours.</p>
+
+          <div class="contact-methods section-reveal">
+            <a href="/cdn-cgi/l/email-protection#4f272a2323200f2c202b2a213f26372a23612621" class="contact-method">
+              <div class="cm-icon" style="background:rgba(255,45,120,0.12);">📧</div>
+              <div class="cm-text">
+                <strong>Email Us</strong>
+                <span><span class="__cf_email__"
+                    data-cfemail="81e9e4ededeec1e2eee5e4eff1e8f9e4edafe8ef">[email&#160;protected]</span></span>
+              </div>
+              <span style="margin-left:auto;color:var(--coral)">→</span>
+            </a>
+            <a href="https://wa.me/919876543210" class="contact-method">
+              <div class="cm-icon" style="background:rgba(245,255,0,0.12);">💬</div>
+              <div class="cm-text">
+                <strong>WhatsApp</strong>
+                <span>+91 7008404037</span>
+              </div>
+              <span style="margin-left:auto;color:var(--mint)">→</span>
+            </a>
+            <a href="https://instagram.com/codenpixel" class="contact-method">
+              <div class="cm-icon" style="background:rgba(255,62,165,0.12);">📸</div>
+              <div class="cm-text">
+                <strong>Instagram</strong>
+                <span>codenpixel_</span>
+              </div>
+              <span style="margin-left:auto;color:var(--rose)">→</span>
+            </a>
+            <a href="https://linkedin.com/company/codenpixel" class="contact-method">
+              <div class="cm-icon" style="background:rgba(123,0,255,0.12);">💼</div>
+              <div class="cm-text">
+                <strong>LinkedIn</strong>
+                <span>CodeNPixel Studio</span>
+              </div>
+              <span style="margin-left:auto;color:var(--indigo)">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap section-reveal">
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Name.." required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Email.." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service Interested In</label>
+              <select>
+                <option value="">Select a service...</option>
+                <option>Interactive UI/UX Design</option>
+                <option>QR Menu System</option>
+                <option>Student Project</option>
+                <option>E-Commerce Website</option>
+                <option>Web Application</option>
+                <option>Performance & SEO</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Project Budget</label>
+              <select>
+                <option value="">Select budget range...</option>
+                <option>Under ₹10,000</option>
+                <option>₹10,000 – ₹30,000</option>
+                <option>₹30,000 – ₹75,000</option>
+                <option>₹75,000 – ₹1,50,000</option>
+                <option>₹1,50,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell Us About Your Project</label>
+              <textarea
+                placeholder="Briefly describe what you'd like to build, when you need it, and any specific requirements..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <span>Send Message</span>
+              <span>🚀</span>
+            </button>
+          </form>
+
+          <div id="form-success" style="display:none;text-align:center;padding:3rem 1rem;">
+            <div style="font-size:4rem;margin-bottom:1rem;">🎉</div>
+            <h3 style="font-family:'Syne',sans-serif;font-size:1.6rem;color:var(--text-primary);margin-bottom:0.8rem;">
+              Message Sent!</h3>
+            <p style="color:var(--text-secondary);font-size:0.95rem;">We'll get back to you within 24 hours. Check your
+              inbox!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Code<span>N</span>Pixel</div>
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">© 2024 CodeNPixel · All rights reserved</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

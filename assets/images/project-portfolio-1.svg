@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF0A95"/>
+      <stop offset="100%" style="stop-color:#FF3EA5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <pattern id="hex" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1.5" fill="rgba(255,255,255,0.08)"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#hex)"/>
+  <!-- Wizard steps -->
+  <rect x="60" y="60" width="680" height="50" rx="10" fill="rgba(0,0,0,0.4)"/>
+  <circle cx="160" cy="85" r="14" fill="rgba(245,255,0,1)"/>
+  <text x="160" y="91" font-size="11" fill="#0A000F" text-anchor="middle" font-family="Arial" font-weight="bold">1</text>
+  <text x="160" y="110" font-size="9" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-family="Arial">Info</text>
+  <rect x="174" y="84" width="92" height="2" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="280" cy="85" r="14" fill="rgba(245,255,0,1)"/>
+  <text x="280" y="91" font-size="11" fill="#0A000F" text-anchor="middle" font-family="Arial" font-weight="bold">2</text>
+  <text x="280" y="110" font-size="9" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-family="Arial">Skills</text>
+  <rect x="294" y="84" width="92" height="2" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="400" cy="85" r="14" fill="rgba(255,45,120,0.8)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <text x="400" y="91" font-size="11" fill="white" text-anchor="middle" font-family="Arial" font-weight="bold">3</text>
+  <text x="400" y="110" font-size="9" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-family="Arial">Theme</text>
+  <rect x="414" y="84" width="92" height="2" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="520" cy="85" r="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="520" y="91" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="middle" font-family="Arial">4</text>
+  <text x="520" y="110" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle" font-family="Arial">Projects</text>
+  <rect x="534" y="84" width="92" height="2" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="640" cy="85" r="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="640" y="91" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="middle" font-family="Arial">5</text>
+  <text x="640" y="110" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle" font-family="Arial">Deploy</text>
+  <!-- Theme selector -->
+  <rect x="60" y="125" width="440" height="230" rx="12" fill="rgba(0,0,0,0.4)"/>
+  <text x="80" y="150" font-size="13" fill="rgba(255,255,255,0.9)" font-family="Arial" font-weight="bold">Choose Your Theme</text>
+  <!-- Theme cards -->
+  <rect x="80" y="160" width="120" height="80" rx="8" fill="rgba(255,45,120,0.8)" stroke="rgba(245,255,0,1)" stroke-width="2"/>
+  <text x="140" y="210" font-size="10" fill="white" text-anchor="middle" font-family="Arial">Neon Dark</text>
+  <rect x="215" y="160" width="120" height="80" rx="8" fill="rgba(245,255,0,0.2)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="275" y="210" font-size="10" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial">Cyber Light</text>
+  <rect x="350" y="160" width="120" height="80" rx="8" fill="rgba(123,0,255,0.3)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="410" y="210" font-size="10" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial">Violet Glass</text>
+  <!-- AI generating -->
+  <rect x="80" y="255" width="400" height="40" rx="8" fill="rgba(255,255,255,0.06)"/>
+  <rect x="80" y="255" width="260" height="40" rx="8" fill="rgba(245,255,0,0.15)"/>
+  <text x="95" y="280" font-size="10" fill="rgba(255,255,255,0.7)" font-family="Arial">🤖 AI generating your portfolio... 65%</text>
+  <!-- Preview panel -->
+  <rect x="520" y="125" width="220" height="230" rx="12" fill="rgba(0,0,0,0.5)" stroke="rgba(245,255,0,0.3)" stroke-width="1"/>
+  <text x="630" y="148" font-size="10" fill="rgba(255,255,255,0.5)" text-anchor="middle" font-family="Arial" letter-spacing="2">PREVIEW</text>
+  <rect x="534" y="155" width="192" height="90" rx="6" fill="rgba(255,45,120,0.2)"/>
+  <circle cx="630" cy="195" r="28" fill="rgba(255,45,120,0.5)"/>
+  <text x="630" y="203" font-size="20" text-anchor="middle" font-family="serif">👨‍💻</text>
+  <rect x="534" y="254" width="120" height="8" rx="4" fill="rgba(255,255,255,0.5)"/>
+  <rect x="534" y="268" width="192" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+  <rect x="534" y="280" width="170" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+  <rect x="534" y="295" width="80" height="20" rx="6" fill="rgba(255,45,120,0.8)"/>
+  <text x="574" y="309" font-size="9" fill="white" text-anchor="middle" font-family="Arial">HIRE ME</text>
+  <rect x="620" y="295" width="80" height="20" rx="6" fill="rgba(245,255,0,0.2)" stroke="rgba(245,255,0,0.5)" stroke-width="1"/>
+  <text x="660" y="309" font-size="9" fill="rgba(245,255,0,0.9)" text-anchor="middle" font-family="Arial">PROJECTS</text>
+  <!-- Deploy button -->
+  <rect x="60" y="370" width="680" height="35" rx="10" fill="rgba(245,255,0,0.9)"/>
+  <text x="400" y="393" font-size="13" fill="#0A000F" text-anchor="middle" font-family="Arial" font-weight="bold">⚡ DEPLOY MY PORTFOLIO IN 60 SECONDS</text>
+  <text x="400" y="430" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="3">PORTFOLIOGEN — AI POWERED</text>
+</svg>

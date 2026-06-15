@@ -1,0 +1,20 @@
+/* ═══════════════════════════════════════
+   CodeNPixel — Font Declarations
+   Primary: CDN loaded | Fallback: system
+═══════════════════════════════════════ */
+
+/* Syne — Display / Headings */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+/* DM Sans — Body */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+/* Space Mono — Code / Tags */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* System fallback stack */
+:root {
+  --font-display: 'Syne', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', Courier, monospace;
+}
